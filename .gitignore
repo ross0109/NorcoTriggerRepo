@@ -1,0 +1,7 @@
+NorcoTrigger/Library
+NorcoTrigger/Temp
+
+*.unityproj
+*.csproj
+*.sln
+*.db
