@@ -21,12 +21,11 @@ public class NetworkHandler : MonoBehaviour {
 	void OnGUI(){
 		if (Network.peerType == NetworkPeerType.Disconnected){
 			GUI.Label(new Rect(10, 10, 200, 20), "Status: Disconnected");
-
 			if (GUI.Button(new Rect(10, 30, 120, 20), "Play Tutorial")){
 				Network.InitializeServer(0, connectionPort, false);  //the first parameter is zero so that no one can connect
 				Application.LoadLevel(1);
 			}
-
+	
 			if (GUI.Button(new Rect(10, 50, 120, 20), "Create Server")){
 				Network.InitializeServer(32, connectionPort, false);
 				Application.LoadLevel(2);
