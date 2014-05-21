@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour {
 	public float radius = 1.0f;
 	public float minSpawnTime = 1.0f;
 	public float maxSpawnTime = 10.0f;
-	public float timeAcceleration = -0.005f;
+	public float timeAcceleration = -.005f;
 	public bool constantSpawn = false;
 	public Transform spawnPosition;
 	Vector3 randomLocation;
